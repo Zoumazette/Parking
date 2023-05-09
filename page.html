@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sélection polygones</title>
+        <style>
+            #svg{
+                width: 1052px;
+                margin: 0 auto;
+                display: block;
+            }
+            #svg #pk .pk:hover{
+                fill: red;
+                stroke: blue;
+                stroke-width: 4px;
+                transition: fill 0.6s;
+            }
+        </style>
+    </head>
+
+<body>
+    <div id="svg">
+    <svg id="pk" width="1048" height="744" xmlns="http://www.w3.org/2000/svg" version="1.1">
+
+        <title>Parking</title>
+
+        // Fond du Parking
+        <rect id="fond_gris" stroke-width="1" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1, 4" stroke="#0082c8" opacity="1" fill="#666" ry="10" height="742" width="1046" y="0" x="0"/>
+
+        // Groupe places 1 à 9 (en haut de gauche à droite)
+        <!--lien clickable--><a xlink:title="Blank" href="" target="_blank">
+            <g class="pk" transform="translate(0,0)" fill="#666">
+                <!-- ry = rayon de l'axe y utilisé pour arrondir les coins du rectangle -->
+                <rect id="pl_1" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+                <text id="txt_1" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">1</text>
+            </g>
+        </a>
+        <!--lien clickable--><a xlink:title="Blank" href="" target="_blank">
+            <g class="pk" transform="translate(115,0)" fill="#666">
+                <rect id="pl-2" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+                <text id="txt-2" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">2</text>
+            </g>
+        </a>
+        <g class="pk" transform="translate(230,0)" fill="#666">
+            <rect id="pl-3" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-3" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">3</text>
+        </g>
+        <g class="pk" transform="translate(345,0)" fill="#666">
+            <rect id="pl-4" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-4" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">4</text>
+        </g>
+        <g class="pk" transform="translate(460,0)" fill="#666">
+            <rect id="pl-5" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-5" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">5</text>
+        </g>
+        <g class="pk" transform="translate(575,0)" fill="#666">
+            <rect id="pl-6" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-6" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">6</text>
+        </g>
+        <g class="pk" transform="translate(690,0)" fill="#666">
+            <rect id="pl-7" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-7" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">7</text>
+        </g>
+        <g class="pk" transform="translate(805,0)" fill="#666">
+            <rect id="pl-8" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-8" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">8</text>
+        </g>
+        <g class="pk" transform="translate(920,0)" fill="#666">
+            <rect id="pl-9" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-9" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">9</text>
+        </g>
+
+        // Groupe places 10 à 12 (à droite de haut en bas)
+        <g class="pk" transform="translate(1044,385),rotate(90)" fill="#666">
+            <rect id="pl-10" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-10" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">10</text>
+        </g>
+        <g class="pk" transform="translate(1044,500),rotate(90)" fill="#666">
+            <rect id="pl-11" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-11" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">11</text>
+        </g>
+        <g class="pk" transform="translate(1044,615),rotate(90)" fill="#666">
+            <rect id="pl-12" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-12" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">12</text>
+        </g>
+
+        // Groupe places 13 à 15 (à gauche de bas en haut)
+        <g class="pk" transform="translate(0,740),rotate(-90)" fill="#666">
+            <rect id="pl-13" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-13" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">13</text>
+        </g>
+        <g class="pk" transform="translate(0,625),rotate(-90)" fill="#666">
+            <rect id="pl-14" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-14" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">14</text>
+        </g>
+        <g class="pk" transform="translate(0,510),rotate(-90)" fill="#666">
+            <rect id="pl-15" opacity="1" ry="2" height="234" width="115" y="5" x="5" stroke-width="4" stroke="#fff"/>
+            <text id="txt-15" font-size="40px" font-family="Arial" fill="#fff" y="54" x="51">15</text>
+        </g>
+
+        // Le trait central et les deux flèches
+        <rect id="trait" opacity="1" ry="4" height="370" width="30" y="370" x="509" fill="#fff"/>
+        <!-- l'attribut 'd' représente le tracé du chemin (path) à afficher. La valeur de cet attribut est une liste de commandes de dessin vectoriel qui spécifient les points et les courbes du chemin :
+            'm' : Déplace le point de départ du chemin vers une nouvelle position absolue (592.27596, 500.79016).
+            'l' : Dessine une ligne depuis la position actuelle vers une nouvelle position relative.
+            'z' : Ferme le chemin en traçant une ligne droite depuis la position actuelle jusqu'au point de départ.-->
+        <path id="fl-droite" fill="#ffffff" transform="rotate(-90 657.776 473.54)" d="m592.27596,500.79016l89.73503,0l0,-54.5l-13.755,0l27.51,-27.24999l27.51002,27.24999l-13.75501,0l0,81.75l-117.24504,0l0,-27.25z"/>
+        <path id="fl-gauche" fill="#ffffff" transform="rotate(-180 367.108 472.428)" d="m343.10847,472.28922l24.00001,-57.86079l24.00001,57.86079l-12.00001,0l0,58.13921l-24.00001,0l0,-58.13921l-12.00001,0z" />
+    </svg>
+    </div>
+</body>
+</html>
